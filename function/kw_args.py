@@ -10,6 +10,7 @@ def print_scores(**kw):
 
 print_scores(Adam=99, Lisa=88, Bart=77)
 
+
 data = {
     'Adam Lee': 99,
     'Lisa S': 88,
