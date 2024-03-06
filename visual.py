@@ -20,6 +20,6 @@ class Application(Frame):
 
 app = Application()
 # 设置窗口标题:
-app.master.title('你好,世界')
+app.master.title('test')
 # 主消息循环:
 app.mainloop()
