@@ -1,5 +1,7 @@
-from tkinter import *
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
+from tkinter import *
 import tkinter.messagebox as messagebox
 
 class Application(Frame):
@@ -20,6 +22,6 @@ class Application(Frame):
 
 app = Application()
 # 设置窗口标题:
-app.master.title('test')
+app.master.title('Hello World')
 # 主消息循环:
 app.mainloop()

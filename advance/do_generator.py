@@ -28,3 +28,4 @@ while 1:
     except StopIteration as e:
         print('Generator return value:', e.value)
         break
+
