@@ -21,8 +21,8 @@ async def req(url):  # 定义一个异步函数req，用于发送异步的HTTP�
 
 @timed  # 应用timed装饰器到main()函数上，用于计算函数执行时间。
 async def main():  # 定义一个异步函数main，作为程序的入口点。
-    tasks = [req('http://klpbbs.com/status/200')
-             for _ in range(5000)]  # 创建一个包含5000个异步HTTP请求任务的列表。
+    tasks = [req('http://zyyo.net/')
+             for _ in range(100)]  # 创建一个包含5000个异步HTTP请求任务的列表。
     # 使用asyncio.gather()函数并发执行所有的HTTP请求任务，并等待它们全部完成。
     result = await asyncio.gather(*tasks)
     print(f"Last response status: {result[-1]}")  # 打印最后一个HTTP响应的状态码。
