@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
     start = time.perf_counter()
     for _ in range(500):
-        IORequests(url="http://zyyo.net/", callback=handle.handle).get()
+        IORequests(url="http://about.ilingdu.net/wallpaper/", callback=handle.handle).get()
     IORequests.run_until_complete()
     end = time.perf_counter()
     print(f"耗时: {end - start}")
