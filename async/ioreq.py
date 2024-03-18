@@ -17,7 +17,7 @@ async def download_all(urls:list):
             tasks.append(task)
         await asyncio.gather(*tasks,return_exceptions=True) # the await must be nest inside of the session
 
-url_list = ["https://warhut.cn/"]*5000
+url_list = ["https://warhut.cn/"]*500
 print(url_list)
 start = time.time()
 asyncio.run(download_all(url_list))
